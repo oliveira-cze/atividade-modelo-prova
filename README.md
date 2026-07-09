@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Atividade Modelo Prova - Consumo de API de Usuários
 
-## Getting Started
+ste repositório contém o desenvolvimento de uma aplicação web robusta desenvolvida com **Next.js (App Router)**, **TypeScript** e **Tailwind CSS v4**. O projeto foi estruturado utilizando os princípios do **Atomic Design** (Atoms, Molecules, Organisms) para garantir modularidade, componentização limpa e alta escalabilidade.
 
-First, run the development server:
+## 🚀 Tecnologias e Ferramentas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js (App Router):** Framework React com roteamento baseado em arquivos dentro do diretório `src/app`.
+- **TypeScript:** Tipagem estática para maior segurança e prevenção de erros em tempo de desenvolvimento.
+- **Tailwind CSS v4:** Estilização moderna e utilitária de alta performance.
+- **Arquitetura Atomic Design:** Divisão de componentes em Átomos, Moléculas e Organismos para melhor organização do ecossistema front-end.
+
+## 📦 Estrutura do Projeto
+
+```text
+├── src/
+│   ├── app/
+│   │   ├── sobre/
+│   │   │   └── page.tsx         # Página Sobre o projeto
+│   │   ├── usuarios/
+│   │   │   ├── [id]/
+│   │   │   │   └── page.tsx     # Página dinâmica de Detalhes do Usuário
+│   │   │   └── page.tsx         # Página de Listagem de Usuários
+│   │   ├── globals.css          # Estilos globais e diretivas do Tailwind v4
+│   │   └── layout.tsx           # Layout principal da aplicação
+│   ├── components/
+│   │   ├── atoms/               # Componentes de menor granularidade
+│   │   │   ├── CardBadge.tsx
+│   │   │   ├── HeaderButtons.tsx
+│   │   │   └── OverTitle.tsx
+│   │   ├── molecules/           # Combinações de átomos
+│   │   │   ├── AboutCard.tsx
+│   │   │   ├── DetailCard.tsx
+│   │   │   └── UserCard.tsx
+│   │   └── organisms/           # Estruturas complexas e seções da página
+│   │       ├── AboutContent.tsx
+│   │       ├── Footer.tsx
+│   │       ├── Header.tsx
+│   │       ├── HeroAbout.tsx
+│   │       ├── HeroUser.tsx
+│   │       ├── UserDetails.tsx
+│   │       └── UserList.tsx
+│   ├── service/
+│   │   └── UserService.ts       # Camada de serviços assíncronos para consumo da API
+│   └── types/
+│       └── User.ts              # Definições de interfaces e tipos do TypeScript
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Como Instalar e Executar o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Como o projeto utiliza o ecossistema do Next.js, siga os passos abaixo para rodar o ambiente de desenvolvimento local:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Opção 1: Execução Direta (Local)
+1. Faça o clone do repositório:
+   ```bash
+   git clone https://github.com/oliveira-cze/atividade-modelo-prova.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd atividade-modelo-prova
+   ```
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
+4. Execute a aplicação em um ambiente de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+5. Acesse seu navegador:
+    
+    Abra http://localhost:3000 para visualizar a aplicação rodando localmente.
 
-## Learn More
+## ⚙️ Scripts Disponíveis
 
-To learn more about Next.js, take a look at the following resources:
+No arquivo `package-json`, você encontrará os seguintes comandos executáveis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev`: Inicia o servidor de desenvolvimento local na porta 3000.
+- `npm run build`: Cria o build de produção otimizado da aplicação.
+- `npm run start`: Inicia o servidor Next.js em modo de produção (após rodar o build).
+- `npm run lint`: Executa o validador ESLint para checagem de boas práticas e padronização do código.

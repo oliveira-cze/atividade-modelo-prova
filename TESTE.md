@@ -6,17 +6,17 @@ Este documento descreve o plano e os resultados dos testes de validação realiz
 
 | Item | Critério de Validação | Status | Data-Hora | Observações |
 | :--- | :--- | :---: | :---: | :--- |
-| 1 | Instalação do projeto |  [ ]  | dd-mm-aaaa hh:mm | Sucesso na execução do `npm install` carregando a pasta `node_modules`. |
-| 2 | Execução da aplicação |  [ ]  | dd-mm-aaaa hh:mm | Executado via `npm run dev` subindo com sucesso em `http://localhost:3000`. |
-| 3 | Carregamento da página inicial |  [ ]  | dd-mm-aaaa hh:mm | Rota principal renderizada através da estrutura do Next.js App Router. |
-| 4 | Consumo da API |  [ ]  | dd-mm-aaaa hh:mm | Gerenciado de forma tipada em `src/service/UserService.ts` retornando dados mapeados. |
-| 5 | Exibição da lista de usuários |  [ ]  | dd-mm-aaaa hh:mm | Renderização dinâmica via `UserList.tsx` mapeando múltiplos `UserCard.tsx` |
-| 6 | Carregamento das imagens da API |  [ ]  | dd-mm-aaaa hh:mm | Avatares e mídias visuais exibidos perfeitamente nos cards. |
-| 7 | Navegação para página de detalhes |  [ ]  | dd-mm-aaaa hh:mm | Redirecionamento dinâmico via rotas do Next.js para `/usuarios/[id]`. |
-| 8 | Exibição dos dados do usuário |  [ ]  | dd-mm-aaaa hh:mm | Captura do parâmetro de ID da URL e renderização em `UserDetails.tsx` |
-| 9 | Acesso à página Sobre |  [ ]  | dd-mm-aaaa hh:mm | Rota estática /sobre resolvida via `AboutContent.tsx` e `AboutCard.tsx.` |
-| 10 | Funcionamento dos links |  [ ]  | dd-mm-aaaa hh:mm | Componentes `Header.tsx`, `Footer.tsx`, `AboutContent.tsx` e `UserCard.tsx` usando `next/link` para navegação fluida SPAs. |
-| 11 | Conferência de arquivos enviados |  [ ]  | dd-mm-aaaa hh:mm | Repositório devidamente limpo. Pastas locais como `.next/`, `node_modules/` e `.history/` ignoradas no `.gitignore` |
+| 1 | Instalação do projeto |  [X]  | 09-07-2026 13:33 | Sucesso na execução do `npm install` carregando a pasta `node_modules`. |
+| 2 | Execução da aplicação |  [X]  | 09-07-2026 13:34 | Executado via `npm run dev` subindo com sucesso em `http://localhost:3000/usuarios`. |
+| 3 | Carregamento da página inicial |  [X]  | 09-07-2026 13:34 | Rota principal renderizada através da estrutura do Next.js App Router. |
+| 4 | Consumo da API |  [X]  | 09-07-2026 13:34 | Gerenciado de forma tipada em `src/service/UserService.ts` retornando dados mapeados. |
+| 5 | Exibição da lista de usuários |  [X]  | 09-07-2026 13:34 | Renderização dinâmica via `UserList.tsx` mapeando múltiplos `UserCard.tsx` |
+| 6 | Carregamento das imagens da API |  [X]  | 09-07-2026 13:34 | Avatares e mídias visuais exibidos perfeitamente nos cards. |
+| 7 | Navegação para página de detalhes |  [X]  | 09-07-2026 13:34 | Redirecionamento dinâmico via rotas do Next.js para `/usuarios/[id]`. |
+| 8 | Exibição dos dados do usuário |  [X]  | 09-07-2026 13:34 | Captura do parâmetro de ID da URL e renderização em `UserDetails.tsx` |
+| 9 | Acesso à página Sobre |  [X]  | 09-07-2026 13:35 | Rota estática /sobre resolvida via `AboutContent.tsx` e `AboutCard.tsx.` |
+| 10 | Funcionamento dos links |  [X]  | 09-07-2026 13:35 | Componentes `Header.tsx`, `Footer.tsx`, `AboutContent.tsx` e `UserCard.tsx` usando `next/link` para navegação fluida SPAs. |
+| 11 | Conferência de arquivos enviados |  [X]  | 09-07-2026 13:32 | Repositório devidamente limpo. Pastas locais como `.next/`, `node_modules/` e `.history/` ignoradas no `.gitignore` |
 
 ---
 
